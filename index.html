@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f1f0352d8d.js"></script>
+    <title>Cronômetro</title>
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navBar">
+            <table>
+                <tr>
+                    <a href="https://www.instagram.com/joaovictor_macedo_/"><button><i class="fa fa-instagram fa-2x btn-social" aria-hidden="true"></i></button></a>
+                    <a href="https://github.com/Victor-MacedoSantos"><button><i class="fa fa-github fa-2x btn-social" aria-hidden="true"></i></button></a>
+                    <a href="https://twitter.com/jovictor_macedo"><button><i class="fa fa-twitter fa-2x btn-social" aria-hidden="true"></i></button></a>
+                </tr>
+            </table>
+        </nav>
+
+        <div class="cronometro">
+            <span id="display" type="text">
+                <input maxlength="2" class="time" id="hours" id="hours" name="hours" value="0">
+                <p style="font-size: 100px;">:</p>
+                <input maxlength="2" class="time" id="minuts" id="minuts" type="text" value="0">
+                <p style="font-size: 100px;">:</p>
+                <input maxlength="2" class="time" id="seconds" id="seconds" type="text" value="0">
+            </span>
+        </div>
+
+        <div class="buttons">
+            <button onclick="pause()"><i id="pause" class="fa fa-pause fa-3x btn-control" aria-hidden="true"></i></button> 
+            <button onclick="play()"><i id="play" style="color: ;" class="fa fa-play fa-3x btn-control" aria-hidden="true"></i></button>
+            <button onclick="stop()"><i  id="stop" class="fa fa-stop fa-3x btn-control" aria-hidden="true"></i></button>
+        </div>
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
